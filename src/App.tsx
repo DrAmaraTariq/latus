@@ -11,7 +11,7 @@ import Reports from "./pages/Reports";
 
 export default function App() {
   return (
-    <BrowserRouter basename="/latus">
+    <BrowserRouter basename="/latus/">
       <Routes>
               <Route path="/" element={<Dashboard />} />
         <Route path="/appointments" element={<Appointments />} />
