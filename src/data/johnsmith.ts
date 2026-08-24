@@ -62,7 +62,7 @@ export const johnPatientData: PatientRecord = {
     "Routine quarterly wellness check-in, review of hypertension management, and evaluation of baseline wearable telemetry data.",
   
   safetyItems: [
-    { id: "s1", label: "No Known Drug Allergies (NKDA)", severity: "low" },
+    { id: "s1", label: "No Known Drug Allergies (NKDA)"},
     { id: "s2", label: "Mild Shellfish Sensitivity", severity: "info" },
   ],
 
@@ -81,7 +81,6 @@ export const johnPatientData: PatientRecord = {
       label: "Patient-Reported Blood Pressure",
       value: "122/80",
       unit: "mmHg",
-      trend: "flat",
       trendGood: true,
       timestamp: "Reported today • 07:30",
       note: "Patient-reported home cuff measurement",
@@ -175,7 +174,10 @@ export const johnPatientData: PatientRecord = {
     {
       id: "kf1",
       label: "Resting Heart Rate (Stable)",
+<<<<<<< HEAD
       direction: "up",
+=======
+>>>>>>> 1c1394279aa7a1427a461ab7037a1b210d9f3f24
       source: "Apple Watch",
       timestamp: "Today • 08:15",
       trend: [
