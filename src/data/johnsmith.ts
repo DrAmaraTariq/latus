@@ -62,7 +62,7 @@ export const johnPatientData: PatientRecord = {
     "Routine quarterly wellness check-in, review of hypertension management, and evaluation of baseline wearable telemetry data.",
   
   safetyItems: [
-    { id: "s1", label: "No Known Drug Allergies (NKDA)"},
+    { id: "s1", label: "No Known Drug Allergies (NKDA)", severity: "info" },
     { id: "s2", label: "Mild Shellfish Sensitivity", severity: "info" },
   ],
 
@@ -174,10 +174,7 @@ export const johnPatientData: PatientRecord = {
     {
       id: "kf1",
       label: "Resting Heart Rate (Stable)",
-<<<<<<< HEAD
       direction: "up",
-=======
->>>>>>> 1c1394279aa7a1427a461ab7037a1b210d9f3f24
       source: "Apple Watch",
       timestamp: "Today • 08:15",
       trend: [
@@ -294,3 +291,4 @@ A: Hypertension is well-controlled on current medication. No acute clinical conc
 
 P: Continue Lisinopril 10 mg once daily. Maintain current exercise routines and schedule routine lab work in 6 months.`,
 };
+
