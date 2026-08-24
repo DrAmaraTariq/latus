@@ -175,7 +175,7 @@ export const johnPatientData: PatientRecord = {
     {
       id: "kf1",
       label: "Resting Heart Rate (Stable)",
-      direction: "flat",
+      direction: "up",
       source: "Apple Watch",
       timestamp: "Today • 08:15",
       trend: [
