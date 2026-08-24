@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Appointments from "./pages/Appointments";
 import Patients from "./pages/Patients";
@@ -11,7 +11,7 @@ import Reports from "./pages/Reports";
 
 export default function App() {
   return (
-    <BrowserRouter basename="/latus/">
+    <HashRouter>
       <Routes>
               <Route path="/" element={<Dashboard />} />
         <Route path="/appointments" element={<Appointments />} />
@@ -20,10 +20,8 @@ export default function App() {
         <Route path="/consultation/:patientId" element={<Consultation />} />
         <Route path="/messages" element={<Messages />} />
         <Route path="/reports" element={<Reports />} />
-     
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/patients/:patientId" element={<PatientIntelligence />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
+
